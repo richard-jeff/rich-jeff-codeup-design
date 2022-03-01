@@ -1,0 +1,24 @@
+.circle {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.circle-w-text {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.circle-w-border {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: blue;
+    border: 3px solid red;
+}

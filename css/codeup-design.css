@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
+
+/*
+<h1>	64px	4rem
+<h2>	48px	3rem
+<h3>	40px	2.5rem
+<h4>	32px	2rem
+<h5>	28px	1.75rem
+
+anton: bold
+abel: regular
+*/
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --red-orange: #e6563b;
+    --orange: #cea03d;
+    --green: #7cb06c;
+    --emerald: #00aba9;
+    --off-white: #f0f0f0;
+    --gray: #e6e6e6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid var(--black);
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.dev-container {
+    border: solid 1px green;
+}
+
+.dev-row {
+    border: solid 3px red;
+    height: 300px;
+}
+
+.dev-column {
+    border: dotted 3px blue;
+}
+
+/*X-Small devices (portrait phones, less than 576px)*/
+/*No media query for `xs` since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+
+}
