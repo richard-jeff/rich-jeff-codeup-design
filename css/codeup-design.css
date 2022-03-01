@@ -36,13 +36,7 @@ body{
     /*border: 1px solid var(--black);*/
 }
 
-.centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    /* bring your own prefixes */
-    transform: translate(-50%, -50%);
-}
+
 
 .dev-container {
     border: solid 1px green;
@@ -59,6 +53,9 @@ body{
 
 .logo-text{
     font-family: 'Abel', sans-serif;
+
+}
+nav{
 
 }
 .nav-parent{
