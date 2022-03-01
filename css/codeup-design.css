@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
 
-/*
-<h1>	64px	4rem
-
-<h2>	48px	3rem
-<h3>	40px	2.5rem
-<h4>	32px	2rem
-<h5>	28px	1.75rem
-
-anton: bold
-abel: regular
-*/
-h2{
-    font-size: 48px;
-}
-body{
-    height: 100%;
-}
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -29,6 +12,7 @@ body{
     --gray: #e6e6e6;
 }
 
+/* GENERAL STYLES BEGIN */
 * {
     padding: 0;
     margin: 0;
@@ -36,6 +20,75 @@ body{
     /*border: 1px solid var(--black);*/
 }
 
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--gray);
+}
+
+/* GENERAL STYLES END */
+
+
+/* GRAY AND WHITE DIVS ON TOP BEGIN */
+.top-gray {
+    background-color: var(--gray);
+    height: 80px;
+}
+
+.top-white {
+    background-color: var(--white);
+    height: 100px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+/* GRAY AND WHITE DIVS ON TOP END */
+
+
+/* EXTRA SMALL HEADER BEGIN */
+.logo-extra-small-logo-center {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 150px;
+    margin-bottom: -125px;
+}
+
+.extra-small-header-center {
+    text-align: center;
+}
+
+/* EXTRA SMALL HEADER END */
+
+
+/* SMALL HEADER BEGIN */
+.small-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* SMALL HEADER END */
+
+h1 {
+    text-align: center;
+    font-family: Anton, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+h3 {
+    text-align: center;
+    font-family: Anton, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
 
 
 .dev-container {
@@ -44,29 +97,22 @@ body{
 
 .dev-row {
     border: solid 3px red;
-    height: 300px;
+    height: 3px;
 }
 
 .dev-column {
     border: dotted 3px blue;
 }
 
-.logo-text{
-    font-family: 'Abel', sans-serif;
 
-}
-nav{
-
-}
-.nav-parent{
-    margin-bottom: 70px;
-}
 /*X-Small devices (portrait phones, less than 576px)*/
 /*No media query for `xs` since this is the default in Bootstrap*/
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-
+    .extra-small-logo-only {
+        display: none;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
