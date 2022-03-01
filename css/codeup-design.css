@@ -2,6 +2,7 @@
 
 /*
 <h1>	64px	4rem
+
 <h2>	48px	3rem
 <h3>	40px	2.5rem
 <h4>	32px	2rem
@@ -10,7 +11,12 @@
 anton: bold
 abel: regular
 */
-
+h2{
+    font-size: 48px;
+}
+body{
+    height: 100%;
+}
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -27,7 +33,7 @@ abel: regular
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid var(--black);
+    /*border: 1px solid var(--black);*/
 }
 
 .centered {
@@ -51,6 +57,13 @@ abel: regular
     border: dotted 3px blue;
 }
 
+.logo-text{
+    font-family: 'Abel', sans-serif;
+
+}
+.nav-parent{
+    margin-bottom: 70px;
+}
 /*X-Small devices (portrait phones, less than 576px)*/
 /*No media query for `xs` since this is the default in Bootstrap*/
 
