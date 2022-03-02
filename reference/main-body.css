@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --red-orange: #e6563b;
+    --orange: #cea03d;
+    --green: #7cb06c;
+    --emerald: #00aba9;
+    --off-white: #f0f0f0;
+    --gray: #e6e6e6;
+
+    --blue: #1DA1F2;
+}
+
+/* GENERAL STYLES BEGIN */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*border: 1px solid var(--black);*/
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--gray);
+}
+
+
+/* offset twitter icon and apply blue */
+.twitter-fix {
+    position: relative;
+    top: 3px;
+
+    color: var(--blue);
+}
+
+/* returnreturn - FIX ME */
+.the-last-width {
+    max-width: 226px;
+}
+
+
+.dev-container {
+    /*border: solid 1px green;*/
+}
+
+.dev-row {
+    /*border: solid 3px red;*/
+    height: 3px; /* returnreturn - FIX ME */
+}
+
+.dev-column {
+    /*border: dotted 3px blue;*/
+}
