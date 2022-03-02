@@ -9,7 +9,10 @@
     --emerald: #00aba9;
     --off-white: #f0f0f0;
     --gray: #e6e6e6;
+
+    --blue: #1DA1F2;
 }
+
 *,
 *::before,
 *::after {
@@ -29,40 +32,51 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
 }
-h1, h2,h3,h4,h5{
+
+h1, h2, h3, h4, h5 {
     font-family: Anton, sans-serif;
 }
-h1{
+
+h1 {
     font-size: 4rem;
 }
-h2{
+
+h2 {
     font-size: 3rem;
 }
-h3{
+
+h3 {
     font-size: 2.5rem;
 }
-h4{
+
+h4 {
     font-size: 2rem;
 }
-h2{
+
+h2 {
     font-size: 1.75rem;
 }
-p{
+
+p {
     font-family: 'Abel', sans-serif;
 }
+
 /* I believe bootstrap added 2rem of padding, hence the padding 0*/
 /*It effected the nav-links*/
-ul,ol {
-    list-style-type:none;
+ul, ol {
+    list-style-type: none;
     padding-left: 0;
 }
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
     text-decoration-skip-ink: auto;
 }
+
 a {
     text-decoration: none;
 }
+
 /* Make images easier to work with */
 img,
 picture {
@@ -77,9 +91,10 @@ textarea,
 select {
     font: inherit;
 }
+
 /* ########## END GLOBAL STYLE UTILITIES########## */
 
-.white-navbar{
+.white-navbar {
     max-height: 12vh;
     height: 12vh;
     width: 100%;
@@ -90,7 +105,8 @@ select {
     top: 70px;
 
 }
-.navbar-items-container{
+
+.navbar-items-container {
     /*this class allows pinpoint adjustments of the navbar content*/
     z-index: 33;
     display: flex;
@@ -100,14 +116,17 @@ select {
     position: relative;
     top: 20px;
 }
-.cd-logo{
+
+.cd-logo {
     width: 45%;
 
 }
-.navbar-items p{
+
+.navbar-items p {
     font-size: 3rem;
 }
-.nav-links{
+
+.nav-links {
     /*adjusts navigation ul*/
     width: 80%;
     display: flex;
@@ -116,35 +135,80 @@ select {
     color: var(--black);
 }
 
-.nav-links a{
+.nav-links a {
     color: var(--black);
 }
-h1{
-/*    controls the only h1 on the page "visual design..*/
+
+h1 {
+    /*    controls the only h1 on the page "visual design..*/
     margin-top: 60px;
 
 }
-h1 + h2{
+
+h1 + h2 {
     text-align: center;
     margin-top: 60px;
 }
 
+.the-last-width {
+    margin: 0 auto;
+    padding: 0;
+}
+.circle-red-orange {
+    background-color: var(--red-orange);
+}
+
+.circle-red {
+    background-color: var(--orange);
+}
+
+.circle-green {
+    background-color: var(--green);
+}
+
+.circle-emerald {
+    background-color: var(--emerald);
+}
+
+/* MAIN BODY */
+
+.circle-small {
+/*text-align:  center;*/
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 0;
+}
+
+/* returnreturn - FIX ME */
+.the-last-width {
+    max-width: 226px;
+}
+
+/* offset twitter icon and apply blue */
+.twitter-fix {
+    position: relative;
+    top: 3px;
+
+    color: var(--blue);
+}
 
 
 
 
+/* GRID BORDERS */
+.dev-container {
+    border: solid 1px green;
+}
 
+.dev-row {
+    border: solid 3px red;
+    height: 3px; /* returnreturn - FIX ME */
+}
 
-
-
-
-
-
-
-
-
-
-
+.dev-column {
+    border: dotted 3px blue;
+}
 
 
 
