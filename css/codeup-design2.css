@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --red-orange: #e6563b;
+    --orange: #cea03d;
+    --green: #7cb06c;
+    --emerald: #00aba9;
+    --off-white: #f0f0f0;
+    --gray: #e6e6e6;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gray);
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+}
+h1, h2,h3,h4,h5{
+    font-family: Anton, sans-serif;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+h4{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.75rem;
+}
+p{
+    font-family: 'Abel', sans-serif;
+}
+/* I believe bootstrap added 2rem of padding, hence the padding 0*/
+/*It effected the nav-links*/
+ul,ol {
+    list-style-type:none;
+    padding-left: 0;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+a {
+    text-decoration: none;
+}
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+/* ########## END GLOBAL STYLE UTILITIES########## */
+
+.white-navbar{
+    max-height: 12vh;
+    height: 12vh;
+    width: 100%;
+    background: white;
+    position: absolute;
+    z-index: 1;
+    /*top adjusts position of white navbar and its content*/
+    top: 70px;
+
+}
+.navbar-items-container{
+    /*this class allows pinpoint adjustments of the navbar content*/
+    z-index: 33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin-top: 50px;*/
+    position: relative;
+    top: 20px;
+}
+.cd-logo{
+    width: 45%;
+
+}
+.navbar-items p{
+    font-size: 3rem;
+}
+.nav-links{
+    /*adjusts navigation ul*/
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--black);
+}
+
+.nav-links a{
+    color: var(--black);
+}
+h1{
+/*    controls the only h1 on the page "visual design..*/
+    margin-top: 60px;
+
+}
+h1 + h2{
+    text-align: center;
+    margin-top: 60px;
+}
