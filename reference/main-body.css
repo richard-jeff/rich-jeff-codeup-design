@@ -3,7 +3,6 @@
 :root {
     --white: #FFFFFF;
     --black: #000000;
-
     --red-orange: #e6563b;
     --orange: #cea03d;
     --green: #7cb06c;
@@ -14,50 +13,177 @@
     --blue: #1DA1F2;
 }
 
-/* GENERAL STYLES BEGIN */
-* {
-    /*padding: 0;*/
-    /*margin: 0;*/
-    /*box-sizing: border-box;*/
-    /*border: 1px solid var(--black);*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 html {
-    /*font-size: 16px;*/
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 body {
-    /*background-color: var(--gray);*/
+    background-color: var(--gray);
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: Anton, sans-serif;
+}
 
-/* offset twitter icon and apply blue */
-.twitter-fix {
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 60px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+p {
+    font-family: 'Abel', sans-serif;
+}
+
+/* I believe bootstrap added 2rem of padding, hence the padding 0*/
+/*It effected the nav-links*/
+ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* ########## END GLOBAL STYLE UTILITIES########## */
+
+.white-navbar {
+    max-height: 12vh;
+    height: 12vh;
+    width: 100%;
+    background: white;
+    position: absolute;
+    z-index: 1;
+    /*top adjusts position of white navbar and its content*/
+    top: 70px;
+}
+
+.navbar-items-container {
+    /*this class allows pinpoint adjustments of the navbar content*/
+    z-index: 33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin-top: 50px;*/
     position: relative;
-    top: 3px;
-
-    color: var(--blue);
+    top: 20px;
 }
 
-.small-circle-span {
-    /*margin-left: -10px;*/
+.cd-logo {
+    width: 45%;
+
 }
-.circle-small {
-/*text-align:  center;*/
-    height: 18px;
-    width: 18px;
+.navbar-items2{
+    display: none;
+}
+.navbar-items p {
+    font-size: 3rem;
+}
+
+.nav-links {
+    /*adjusts navigation ul*/
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--black);
+}
+
+.nav-links a {
+    color: var(--black);
+}
+
+h1 {
+    /*    controls the only h1 on the page "visual design..*/
+    margin-top: 60px;
+
+
+}
+
+h1 + h2 {
+    text-align: center;
+    margin-top: 60px;
+}
+/*Controls service buttons*/
+.service-badges{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+.service-badges_badge{
+    /*    this adjusts the large services badges underneath the h1*/
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
-    border: 0;
-
-
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid 12px var(--white);
+    margin-bottom: 15px;
 }
-
-.center-sm-circle-text {
-    /*display: flex;*/
-    /*justify-content: space-around;*/
-    /*align-items: center;*/
-
-
+.design{
+    background:var(--red-orange)
+}
+.develop{
+    background:var(--orange)
+}
+.support{
+    background:var(--green)
+}
+.host{
+    background:var(--emerald)
 }
 
 .the-last-width {
@@ -80,21 +206,144 @@ body {
     background-color: var(--emerald);
 }
 
+/* MAIN BODY */
+
+.circle-small {
+/*text-align:  center;*/
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 0;
+}
+
 /* returnreturn - FIX ME */
 .the-last-width {
     max-width: 226px;
 }
 
+/* offset twitter icon and apply blue */
+.twitter-fix {
+    position: relative;
+    top: 3px;
 
+    color: var(--blue);
+}
+
+
+
+
+/* GRID BORDERS */
 .dev-container {
-    /*border: solid 1px green;*/
+    border: solid 1px green;
 }
 
 .dev-row {
-    /*border: solid 3px red;*/
+    border: solid 3px red;
     height: 3px; /* returnreturn - FIX ME */
 }
 
 .dev-column {
-    /*border: dotted 3px blue;*/
+    border: dotted 3px blue;
 }
+
+
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 768px) {
+    .navbar-items{
+        /*visibility: hidden;*/
+        display: none;
+        /*height: 50%;*/
+    }
+    .navbar-items2{
+        display: block;
+        z-index: 77;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .service-container{
+        margin-top: 300px;
+    }
+    .white-navbar {
+        z-index: -5;
+    }
+    .navbar-items2-container{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*.logo2-md{*/
+    /*    width: 180px;*/
+    /*}*/
+    .cd-logo2{
+        /*width: 50%;*/
+        display: inline;
+    }
+    .nodisplay-the-last{
+        display: none;
+    }
+
+}
+
+
+
+
+
+.test-remove-margin {
+    margin-left: 0;
+}
+
+.the-last-margin-fixes {
+    min-width: 200px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.the-last-twitter-margin-fixes {
+    margin-right: -90px;
+}
+
+
+.the-last-title {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: end;*/
+}
+
+.image-test {
+   /*max-width: 200px;*/
+    /*height: auto;*/
+}
+
+.test-flex {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+}
+
+.feature-button-test {
+    /*max-width: 50%;*/
+}
+
+
+
+/*!*Medium devices (tablets, 768px and up)*!*/
+/*@media (min-width: 768px) {*/
+
+/*}*/
+
+/*!*Large devices (desktops, 992px and up)*!*/
+/*@media (min-width: 992px) {*/
+
+/*}*/
+
+/*!*X-Large devices (large desktops, 1200px and up)*!*/
+/*@media (min-width: 1200px) {*/
+
+/*}*/
+
+/*!*XX-Large devices (larger desktops, 1400px and up)*!*/
+/*@media (min-width: 1400px) {*/
+
+/*}*/
