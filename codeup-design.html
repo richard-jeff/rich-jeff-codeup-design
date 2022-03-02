@@ -12,50 +12,46 @@
     <title>Codeup Design</title>
 </head>
 <body>
-<!--   TODO: There's nothing in the below div?   -->
-<div class="white-navbar"></div> 
+<div class="white-navbar"></div>
+<!--BEGIN NAV BAR ITEMS 2 FOR SMALL NAVIGATION-->
 <nav class="navbar-items ">
-    <div class="navbar-items-container">
-        <img src="/img/cd-logo.png" alt="codeup design logo" class="cd-logo">
-        <p>codeup design</p>
-        <ul class="nav-links">
-            <li><a href="http://#">SERVICES</a></li>
-            <li><a href="http://#">WORK</a></li>
-            <li><a href="http://#">BLOG</a></li>
-            <li><a href="http://#">CONTACT</a></li>
-        </ul>
-    </div>
+
+    <img src="/img/cd-logo.png" alt="codeup design logo" class="cd-logo">
+    <p>codeup design</p>
+    <ul class="nav-links">
+        <li><a href="http://#">SERVICES</a></li>
+        <li><a href="http://#">WORK</a></li>
+        <li><a href="http://#">BLOG</a></li>
+        <li><a href="http://#">CONTACT</a></li>
+    </ul>
+
 </nav>
 <!--END NAV BAR ITEMS-->
 
-<!--BEGIN NAV BAR ITEMS 2-->
+<!--BEGIN NAV BAR ITEMS 2 FOR MEDIUM NAVIGATION-->
 <nav class="navbar-items2 ">
-    <div class="navbar-items2-container">
-        <div class="left-nav-md">
-            <ul class="nav-links2">
-                <li><a href="http://#">SERVICES</a></li>
-                <li><a href="http://#">WORK</a></li>
-            </ul>
-        </div>
-        <div class="logo2-md">
-            <img src="/img/cd-logo.png" alt="codeup design logo" class="cd-logo2">
-            <p>codeup design</p>
-        </div>
-        <div class="left-nav-md">
-            <ul class="nav-links2">
-                <li><a href="http://#">BLOG</a></li>
-                <li><a href="http://#">CONTACT</a></li>
-            </ul>
-        </div>
-    </div>
+    <ul class="left-links-ul-md">
+        <li><a href="http://#">SERVICES</a></li>
+        <li><a href="http://#">WORK</a></li>
+    </ul>
+    <img src="/img/cd-logo.png" alt="codeup design logo"
+         class="logo2-md">
+    <p class="codeup-design-logo-text-nav">codeup design</p>
+    <ul class="right-links-ul-md">
+        <li><a href="http://#">BLOG</a></li>
+        <li><a href="http://#">CONTACT</a></li>
+    </ul>
+
+
+
 </nav>
 <!--END NAV BAR ITEMS 2-->
-
+<p class="codeup-design-logo-text">codeup design</p>
 <div class="container-fluid service-container">
     <div class="row">
         <div class="col">
             <h1 >VISUAL DESIGN & WEB DEVELOPMENT</h1>
-            <h2>FROM PARK CITY, UTAH</h2>
+            <h2 >FROM PARK CITY, UTAH</h2>
             <div class="service-badges">
                 <div class="design service-badges_badge"><h3>DESIGN</h3></div>
                 <div class="develop service-badges_badge"><h3>DEVELOP</h3></div>
@@ -67,22 +63,14 @@
 </div>
 
 
-<!--TODO: CASEY -> Overall, looks great! Just a few tweaks and think of the 'selected/featured work' as a column. 
-        Think of the 'last' section as another column within one big row  
--->
-    
-    
 <!-- MAIN CONTAINER BEGIN -->
 <div class="container container-fluid">
 
     <div class="row dev-row">
-        
-<!-- TODO: Put the below div in a group with 'featured projects' -->
         <div class="col-md-8 dev-column text-center text-md-start ">
             Selected Work
         </div>
-        
-<!-- TODO: The below 'last' section should probably be after 'featured projects'  -->
+
         <!-- THE LAST BEGIN -->
         <div class="col-md-4 dev-column nodisplay-the-last container-md d-none d-md-block the-last-width">
             <!-- returnreturn - FIX THIS -->
@@ -106,7 +94,7 @@
 
             <div class="d-flex">
                 <i class="ri-twitter-fill twitter-fix"></i> LAST TWEET
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam est officiis rem ullam unde!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam est officiis rem ullam unde!</p>
             </div>
         </div>
         <!-- THE LAST END-->
@@ -115,36 +103,34 @@
 
     <br> <!-- returnreturn - FIX THIS -->
 
-    
-<!--  TODO: Move this above the 'last' section, combine with 'selected work'    -->
     <!-- FEATURED PROJECTS BEGIN -->
     <div class="row dev-row mx-auto">
         <div class="col-sm-6 col-md-4 dev-column">
             <img src="../img/cd-apple-ipad.jpg" class="img-fluid" alt="">
             <span class="d-flex justify-content-between">
-                Featured Project
-                <span>
-                    <button class="badge text-dark circle-small circle-red-orange">D</button>
-                    <button class="badge text-dark circle-small circle-red">D</button>
-                    <button class="badge text-dark circle-small circle-green">S</button>
-                    <button class="badge text-dark circle-small circle-emerald">H</button>
-                </span>
-            </span>
+               Featured Project
+               <span>
+                   <button class="badge text-dark circle-small circle-red-orange">D</button>
+                   <button class="badge text-dark circle-small circle-red">D</button>
+                   <button class="badge text-dark circle-small circle-green">S</button>
+                   <button class="badge text-dark circle-small circle-emerald">H</button>
+               </span>
+           </span>
         </div>
 
         <div class="col-sm-6 col-md-4 dev-column">
             <img src="../img/cd-macbook.jpg" class="img-fluid" alt="">
             <span class="d-flex justify-content-between">
-                Featured Project
-                <span>
-                <span>
-                    <button class="badge text-dark circle-small circle-red-orange">D</button>
-                    <button class="badge text-dark circle-small circle-red">D</button>
-                    <button class="badge text-dark circle-small circle-green">S</button>
-                    <button class="badge text-dark circle-small circle-emerald">H</button>
-                </span>
-            </span>
-            </span>
+               Featured Project
+               <span>
+               <span>
+                   <button class="badge text-dark circle-small circle-red-orange">D</button>
+                   <button class="badge text-dark circle-small circle-red">D</button>
+                   <button class="badge text-dark circle-small circle-green">S</button>
+                   <button class="badge text-dark circle-small circle-emerald">H</button>
+               </span>
+           </span>
+           </span>
         </div>
 
         <div class="col-md-4 dev-column container-md d-none d-md-block d-flex">
@@ -153,26 +139,26 @@
         <div class="col-sm-6 col-md-4 dev-column">
             <img src="../img/cd-man-resized.jpg" class="img-fluid" alt="">
             <span class="d-flex justify-content-between">Featured Project
-                <span>
-                    <button class="badge text-dark circle-small circle-red-orange">D</button>
-                    <button class="badge text-dark circle-small circle-red">D</button>
-                    <button class="badge text-dark circle-small circle-green">S</button>
-                    <button class="badge text-dark circle-small circle-emerald">H</button>
-                </span>
-            </span>
+               <span>
+                   <button class="badge text-dark circle-small circle-red-orange">D</button>
+                   <button class="badge text-dark circle-small circle-red">D</button>
+                   <button class="badge text-dark circle-small circle-green">S</button>
+                   <button class="badge text-dark circle-small circle-emerald">H</button>
+               </span>
+           </span>
         </div>
 
         <div class="col-sm-6 col-md-4 dev-column">
             <img src="../img/cd-security.jpg" class="img-fluid" alt="">
             <span class="d-flex justify-content-between">
-                Featured Project
-                <span>
-                    <button class="badge text-dark circle-small circle-red-orange">D</button>
-                    <button class="badge text-dark circle-small circle-red">D</button>
-                    <button class="badge text-dark circle-small circle-green">S</button>
-                    <button class="badge text-dark circle-small circle-emerald">H</button>
-                </span>
-            </span>
+               Featured Project
+               <span>
+                   <button class="badge text-dark circle-small circle-red-orange">D</button>
+                   <button class="badge text-dark circle-small circle-red">D</button>
+                   <button class="badge text-dark circle-small circle-green">S</button>
+                   <button class="badge text-dark circle-small circle-emerald">H</button>
+               </span>
+           </span>
         </div>
     </div>
 </div>
@@ -188,3 +174,4 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
