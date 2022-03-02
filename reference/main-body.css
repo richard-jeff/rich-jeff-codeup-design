@@ -43,9 +43,9 @@ body {
     /*margin-left: -10px;*/
 }
 .circle-small {
-text-align:  center;
-    height: 30px;
-    width: 30px;
+/*text-align:  center;*/
+    height: 18px;
+    width: 18px;
     border-radius: 50%;
     border: 0;
 
@@ -53,11 +53,16 @@ text-align:  center;
 }
 
 .center-sm-circle-text {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
 
 
+}
+
+.the-last-width {
+    margin: 0 auto;
+    padding: 0;
 }
 .circle-red-orange {
     background-color: var(--red-orange);
