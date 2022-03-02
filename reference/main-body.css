@@ -39,6 +39,42 @@ body {
     color: var(--blue);
 }
 
+.small-circle-span {
+    /*margin-left: -10px;*/
+}
+.circle-small {
+text-align:  center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 0;
+
+
+}
+
+.center-sm-circle-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.circle-red-orange {
+    background-color: var(--red-orange);
+}
+
+.circle-red {
+    background-color: var(--orange);
+}
+
+.circle-green {
+    background-color: var(--green);
+}
+
+.circle-emerald {
+    background-color: var(--emerald);
+}
+
 /* returnreturn - FIX ME */
 .the-last-width {
     max-width: 226px;
