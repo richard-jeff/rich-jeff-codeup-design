@@ -258,12 +258,30 @@ h1 + h2 {
     .navbar-items2{
         display: block;
         z-index: 77;
+        width: 80%;
+        margin: 0 auto;
     }
     .service-container{
         margin-top: 300px;
     }
     .white-navbar {
         z-index: -5;
+    }
+    .navbar-items2-container{
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /*.logo2-md{*/
+    /*    width: 180px;*/
+    /*}*/
+    .cd-logo2{
+        /*width: 50%;*/
+        display: inline;
+    }
+    .nodisplay-the-last{
+        display: none;
     }
 
 }
