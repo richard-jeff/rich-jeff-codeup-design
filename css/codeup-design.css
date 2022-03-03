@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
 
+
 :root {
     --white: #FFFFFF;
     --black: #000000;
 
     --red-orange: #e6563b;
-    --orange: #EB9D3A;          /* typo: #cea03d; */
+    --orange: #EB9D3A; /* typo: #cea03d; */
     --green: #7cb06c;
     --emerald: #00aba9;
     --off-white: #f0f0f0;
     --gray: #e6e6e6;
     --drk-mode-blk: #121212;
     --drk-mode-lt-blk: #2d2d2d;
+
     --blue: #1DA1F2;
 }
 
@@ -97,6 +99,7 @@ textarea,
 select {
     font: inherit;
 }
+
 /* ########## END GLOBAL STYLE UTILITIES########## */
 
 .white-navbar {
@@ -110,7 +113,7 @@ select {
     top: 70px;
 }
 
-.navbar-items{
+.navbar-items {
     /*this class allows pinpoint adjustments of the navbar content*/
     z-index: 33;
     display: flex;
@@ -126,21 +129,27 @@ select {
     height: 105px;
     transition: all 300ms ease-in-out;
 }
-.cd-logo:hover{
+
+.cd-logo:hover {
     filter: grayscale(80%);
 }
-.codeup-design-logo-text{
+
+.codeup-design-logo-text {
     display: none;
 }
+
 .codeup-design-logo-text-nav {
     display: none;
 }
-.navbar-items2{
+
+.navbar-items2 {
     display: none;
 }
+
 .navbar-items3 {
     display: none;
 }
+
 .navbar-items p {
     font-size: 3rem;
 }
@@ -158,11 +167,11 @@ select {
 .nav-links a {
     color: var(--black);
     padding: 0 20px;
-    transition: all 300ms ease-in-out 150ms ;
+    transition: all 300ms ease-in-out 150ms;
     font-size: 1.2rem;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     padding-bottom: 5px;
     border-bottom: 2px black solid;
 }
@@ -176,6 +185,7 @@ h1 + h2 {
     text-align: center;
     margin-top: 60px;
 }
+
 /*Controls service buttons*/
 .service-badges {
     display: flex;
@@ -185,7 +195,7 @@ h1 + h2 {
     margin: 80px 0;
 }
 
-.service-badges_badge{
+.service-badges_badge {
     /*    this adjusts the large services badges underneath the h1*/
     width: 150px;
     height: 150px;
@@ -198,28 +208,32 @@ h1 + h2 {
     margin-bottom: 15px;
     transition: all 320ms ease-in-out;
 }
-.service-badges_badge:hover{
-filter: contrast(130%);
-/*    filter: grayscale(80%);*/
+
+.service-badges_badge:hover {
+    filter: contrast(130%);
+    /*    filter: grayscale(80%);*/
     filter: hue-rotate(120deg);
-transform: scale(1.2) rotate(5deg);
+    transform: scale(1.2) rotate(5deg);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 15px;
 }
-.service-badges_badge:nth-of-type(2):hover,.service-badges_badge:nth-of-type(4):hover{
+
+.service-badges_badge:nth-of-type(2):hover, .service-badges_badge:nth-of-type(4):hover {
     transform: scale(1.2) rotate(-5deg);
 }
-.service-badges_badge h3{
-    font-size:2.2rem ;
+
+.service-badges_badge h3 {
+    font-size: 2.2rem;
 }
 
 .design,
 .circle-red-orange {
-    background:var(--red-orange)
+    background: var(--red-orange)
 }
-.design{
+
+.design {
     animation: slideleft 750ms ease-in-out 1 alternate;
-    transform:translateX(0);
+    transform: translateX(0);
 }
 
 
@@ -237,14 +251,16 @@ transform: scale(1.2) rotate(5deg);
 
 .develop,
 .circle-orange {
-    background:var(--orange)
+    background: var(--orange)
 }
-.develop{
+
+.develop {
     animation: slideorange 850ms ease-in-out 65ms 1 reverse;
-    transform:translatex(0);
+    transform: translatex(0);
     opacity: 1;
 
 }
+
 @keyframes slideorange {
 
     100% {
@@ -255,14 +271,16 @@ transform: scale(1.2) rotate(5deg);
 
 .support,
 .circle-green {
-    background:var(--green)
+    background: var(--green)
 }
-.support{
+
+.support {
     animation: slidegreen 950ms ease-in-out 100ms 1 reverse;
-    transform:translatex(0);
+    transform: translatex(0);
     opacity: 1;
 
 }
+
 @keyframes slidegreen {
 
     100% {
@@ -270,16 +288,19 @@ transform: scale(1.2) rotate(5deg);
         opacity: 0;
     }
 }
+
 .host,
 .circle-emerald {
-    background:var(--emerald)
+    background: var(--emerald)
 }
-.host{
+
+.host {
     animation: slideemerald 1050ms ease-in-out 100ms 1 reverse;
-    transform:translatex(0);
+    transform: translatex(0);
     opacity: 1;
 
 }
+
 @keyframes slideemerald {
 
     100% {
@@ -297,8 +318,8 @@ transform: scale(1.2) rotate(5deg);
     border: solid 7px var(--gray);
 }
 
-.badge{
-    padding:0;
+.badge {
+    padding: 0;
 }
 
 .featured-project-text {
@@ -322,7 +343,7 @@ transform: scale(1.2) rotate(5deg);
     width: 175px; /* keeps bullet text positioned like the examples */
     margin-top: 7px;
     margin-left: 10px;
-    font-family: Anton,sans-serif;
+    font-family: Anton, sans-serif;
     font-size: 1.1rem;
 }
 
@@ -357,11 +378,13 @@ transform: scale(1.2) rotate(5deg);
         margin: 60px auto 80px auto;
         position: relative;
     }
-    .service-badges_badge{
+
+    .service-badges_badge {
         width: 190px;
         height: 190px;
     }
 }
+
 @media screen and (min-width: 768px) {
     .navbar-items {
         display: none;
@@ -376,50 +399,59 @@ transform: scale(1.2) rotate(5deg);
         align-items: center;
         justify-content: space-between;
     }
-    .left-links-ul-md, .right-links-ul-md{
+
+    .left-links-ul-md, .right-links-ul-md {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-grow: 2;
         padding-top: 18px;
     }
-    .left-links-ul-md li a, .right-links-ul-md li a{
+
+    .left-links-ul-md li a, .right-links-ul-md li a {
         color: var(--black);
         font-size: 1.2rem;
         padding: 0 30px;
-        transition: all 300ms ease-in-out 150ms ;
+        transition: all 300ms ease-in-out 150ms;
     }
-    .left-links-ul-md li a:hover, .right-links-ul-md li a:hover{
+
+    .left-links-ul-md li a:hover, .right-links-ul-md li a:hover {
         padding-bottom: 5px;
         border-bottom: 2px black solid;
     }
 
-    .logo2-md{
+    .logo2-md {
         width: 105px;
         height: 105px;
-        display:inline-block;
+        display: inline-block;
         transition: all 350ms ease-in-out;
     }
-    .logo2-md:hover{
+
+    .logo2-md:hover {
         filter: grayscale(80%);
     }
+
     .codeup-design-logo-text {
         font-size: 2rem;
         text-align: center;
         display: block;
     }
+
     h1 {
         margin-top: 30px;
     }
-    .service-container h2{
+
+    .service-container h2 {
         margin-top: 40px;
     }
- .service-badges {
+
+    .service-badges {
         width: 100%;
         /*max-width: 100%;*/
         margin: 60px auto 80px auto;
         position: relative;
     }
+
     .service-badges::after {
         content: "";
         position: absolute;
@@ -430,6 +462,7 @@ transform: scale(1.2) rotate(5deg);
         left: 50%;
         transform: translateX(-50%);
     }
+
     .service-badges_badge {
         /*    this adjusts the large services badges underneath the h1*/
         width: 170px;
@@ -442,14 +475,17 @@ transform: scale(1.2) rotate(5deg);
         border: solid 12px var(--white);
         margin-bottom: 15px;
     }
+
     /*.nodisplay-the-last {*/
     /*    display: none;*/
     /*}*/
 }
+
 @media screen and (min-width: 992px) {
     .navbar-items2 {
         display: none;
     }
+
     .navbar-items3 {
         display: block;
         display: flex;
@@ -457,9 +493,11 @@ transform: scale(1.2) rotate(5deg);
         justify-content: center;
         margin-top: 50px;
     }
+
     .codeup-design-logo-text {
         display: none;
     }
+
     .codeup-design-logo-text-nav-lg {
         font-size: 2rem;
         text-align: center;
@@ -469,34 +507,40 @@ transform: scale(1.2) rotate(5deg);
         text-align: left;
         padding-left: 1rem;
     }
-    .right-links-ul-lg{
+
+    .right-links-ul-lg {
         display: flex;
         align-items: center;
         justify-content: end;
         flex-grow: 2;
         padding-top: 18px;
     }
-    .logo2-lg{
+
+    .logo2-lg {
         width: 105px;
         height: 105px;
-        display:inline-block;
+        display: inline-block;
         transition: filter 350ms ease-in-out;
     }
-    .logo2-lg:hover{
+
+    .logo2-lg:hover {
         filter: grayscale(80%);
     }
-    .right-links-ul-lg a{
+
+    .right-links-ul-lg a {
         color: var(--black);
         padding: 0 30px;
-        transition: all 300ms ease-in-out 150ms ;
+        transition: all 300ms ease-in-out 150ms;
         font-size: 1.1rem;
 
     }
-    .right-links-ul-lg a:hover{
+
+    .right-links-ul-lg a:hover {
         padding-bottom: 5px;
         border-bottom: 2px black solid;
 
     }
+
     .service-badges::after {
         content: "";
         position: absolute;
@@ -511,23 +555,28 @@ transform: scale(1.2) rotate(5deg);
 
 /*DARK MODE*/
 @media (prefers-color-scheme: dark) {
-    body{
+    body {
         background-color: var(--drk-mode-blk);
     }
+
     .service-badges::after {
         /*this is the horizontal rule/border*/
         background: lightgray;
     }
-    p,h1,h2,h3,h4,h5,h6,div,.right-links-ul-lg a,.nav-links a,.left-links-ul-md li a,.right-links-ul-md li a {
+
+    p, h1, h2, h3, h4, h5, h6, div, .right-links-ul-lg a, .nav-links a, .left-links-ul-md li a, .right-links-ul-md li a {
         color: var(--gray);
     }
-    .nav-links a:hover,.left-links-ul-md li a:hover, .right-links-ul-md li a:hover,.right-links-ul-lg a:hover{
+
+    .nav-links a:hover, .left-links-ul-md li a:hover, .right-links-ul-md li a:hover, .right-links-ul-lg a:hover {
         border-bottom: 2px var(--gray) solid;
     }
-    .white-navbar{
+
+    .white-navbar {
         background: var(--drk-mode-lt-blk);
     }
-    .service-badges_badge{
+
+    .service-badges_badge {
         /*    this adjusts the large services badges underneath the h1*/
         border: solid 12px var(--gray);
     }
