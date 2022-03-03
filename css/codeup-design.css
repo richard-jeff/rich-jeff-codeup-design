@@ -294,7 +294,7 @@ transform: scale(1.2) rotate(5deg);
 
 /* SELECTED WORK COLUMN */
 .featured-product-img {
-    border: solid 10px var(--gray);
+    border: solid 7px var(--gray);
 }
 
 .badge{
@@ -442,9 +442,9 @@ transform: scale(1.2) rotate(5deg);
         border: solid 12px var(--white);
         margin-bottom: 15px;
     }
-    .nodisplay-the-last {
-        display: none;
-    }
+    /*.nodisplay-the-last {*/
+    /*    display: none;*/
+    /*}*/
 }
 @media screen and (min-width: 992px) {
     .navbar-items2 {
@@ -534,3 +534,8 @@ transform: scale(1.2) rotate(5deg);
 
 }
 
+@media screen and (max-width: 800px) {
+    .last-thing-no-display {
+        display: none;
+    }
+}
