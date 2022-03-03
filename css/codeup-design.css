@@ -10,7 +10,8 @@
     --emerald: #00aba9;
     --off-white: #f0f0f0;
     --gray: #e6e6e6;
-
+    --drk-mode-blk: #121212;
+    --drk-mode-lt-blk: #2d2d2d;
     --blue: #1DA1F2;
 }
 
@@ -208,17 +209,18 @@ h1 + h2 {
     justify-content: space-evenly;
     border: solid 12px var(--white);
     margin-bottom: 15px;
-    transition: all 300ms ease-in-out;
+    transition: all 320ms ease-in-out;
 }
 .service-badges_badge:hover{
 filter: contrast(130%);
 /*    filter: grayscale(80%);*/
-    filter: hue-rotate(90deg);
+    filter: hue-rotate(120deg);
 transform: scale(1.2) rotate(5deg);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 15px;
-
-
+}
+.service-badges_badge:nth-of-type(2):hover,.service-badges_badge:nth-of-type(4):hover{
+    transform: scale(1.2) rotate(-5deg);
 }
 .service-badges_badge h3{
     font-size:2.2rem ;
@@ -511,7 +513,7 @@ transform: scale(1.2) rotate(5deg);
         width: 105px;
         height: 105px;
         display:inline-block;
-        transition: all 350ms ease-in-out;
+        transition: filter 350ms ease-in-out;
     }
     .logo2-lg:hover{
         filter: grayscale(80%);
@@ -540,7 +542,30 @@ transform: scale(1.2) rotate(5deg);
         transform: translateX(-50%);
     }
 }
+/*DARK MODE*/
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: var(--drk-mode-blk);
+    }
+    .service-badges::after {
+        /*this is the horizontal rule/border*/
+        background: lightgray;
+    }
+    p,h1,h2,h3,h4,h5,h6,div,.right-links-ul-lg a,.nav-links a,.left-links-ul-md li a,.right-links-ul-md li a {
+        color: var(--gray);
+    }
+    .nav-links a:hover,.left-links-ul-md li a:hover, .right-links-ul-md li a:hover,.right-links-ul-lg a:hover{
+        border-bottom: 2px var(--gray) solid;
+    }
+    .white-navbar{
+        background: var(--drk-mode-lt-blk);
+    }
+    .service-badges_badge{
+        /*    this adjusts the large services badges underneath the h1*/
+        border: solid 12px var(--gray);
+    }
 
+}
 
 /* GRID BORDERS */
 .dev-container {
