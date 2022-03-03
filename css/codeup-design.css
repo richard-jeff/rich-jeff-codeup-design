@@ -258,12 +258,6 @@ h1 + h2 {
 }
 
 
-
-
-
-
-
-
 /*MEDIA QUERIES*/
 @media screen and (min-width: 576px) {
     .service-badges {
@@ -325,8 +319,6 @@ h1 + h2 {
         margin-top: 40px;
     }
 
-
-
     .service-badges {
         width: 100%;
         /*max-width: 100%;*/
@@ -358,12 +350,6 @@ h1 + h2 {
         border: solid 12px var(--white);
         margin-bottom: 15px;
     }
-
-    .nodisplay-the-last {
-        display: none;
-    }
-
-
 }
 
 
@@ -378,7 +364,6 @@ h1 + h2 {
         justify-content: center;
         margin-top: 50px;
     }
-
 
     .codeup-design-logo-text {
         display: none;
@@ -416,10 +401,6 @@ h1 + h2 {
         display: none;
     }
 }
-
-
-
-
 
 /* GRID BORDERS */
 .dev-container {
