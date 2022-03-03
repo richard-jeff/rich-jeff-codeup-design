@@ -3,8 +3,9 @@
 :root {
     --white: #FFFFFF;
     --black: #000000;
+
     --red-orange: #e6563b;
-    --orange: #cea03d;
+    --orange: #EB9D3A; /* typo: #cea03d; */
     --green: #7cb06c;
     --emerald: #00aba9;
     --off-white: #f0f0f0;
@@ -28,7 +29,7 @@ html {
 }
 
 body {
-    background-color: var(--gray);
+    background-color: var(--off-white);
     min-height: 100vh;
     text-rendering: optimizeSpeed;
 }
@@ -122,9 +123,11 @@ select {
     width: 45%;
 
 }
-.navbar-items2{
+
+.navbar-items2 {
     display: none;
 }
+
 .navbar-items p {
     font-size: 3rem;
 }
@@ -153,15 +156,17 @@ h1 + h2 {
     text-align: center;
     margin-top: 60px;
 }
+
 /*Controls service buttons*/
-.service-badges{
+.service-badges {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 80px;
 }
-.service-badges_badge{
+
+.service-badges_badge {
     /*    this adjusts the large services badges underneath the h1*/
     width: 170px;
     height: 170px;
@@ -173,176 +178,81 @@ h1 + h2 {
     border: solid 12px var(--white);
     margin-bottom: 15px;
 }
-.design{
-    background:var(--red-orange)
-}
-.develop{
-    background:var(--orange)
-}
-.support{
-    background:var(--green)
-}
-.host{
-    background:var(--emerald)
+
+.design {
+    background: var(--red-orange)
 }
 
-.the-last-width {
-    margin: 0 auto;
-    padding: 0;
-}
-.circle-red-orange {
-    background-color: var(--red-orange);
+.develop {
+    background: var(--orange)
 }
 
-.circle-red {
-    background-color: var(--orange);
+.support {
+    background: var(--green)
 }
 
-.circle-green {
-    background-color: var(--green);
-}
-
-.circle-emerald {
-    background-color: var(--emerald);
-}
-
-/* MAIN BODY */
-
-.circle-small {
-/*text-align:  center;*/
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    border: 0;
-}
-
-/* returnreturn - FIX ME */
-.the-last-width {
-    max-width: 226px;
-}
-
-/* offset twitter icon and apply blue */
-.twitter-fix {
-    position: relative;
-    top: 3px;
-
-    color: var(--blue);
+.host {
+    background: var(--emerald)
 }
 
 
 
 
-/* GRID BORDERS */
-.dev-container {
-    /*border: solid 1px green;*/
-}
 
-.dev-row {
-    /*border: solid 3px red;*/
-    height: 3px; /* returnreturn - FIX ME */
-}
 
-.dev-column {
-    /*border: dotted 3px blue;*/
-}
+
+
+
 
 
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 768px) {
-    .navbar-items{
+    .navbar-items {
         /*visibility: hidden;*/
         display: none;
         /*height: 50%;*/
     }
-    .navbar-items2{
+
+    .navbar-items2 {
         display: block;
         z-index: 77;
         width: 80%;
         margin: 0 auto;
     }
-    .service-container{
+
+    .service-container {
         margin-top: 300px;
     }
+
     .white-navbar {
         z-index: -5;
     }
-    .navbar-items2-container{
-        width:100%;
+
+    .navbar-items2-container {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     /*.logo2-md{*/
     /*    width: 180px;*/
     /*}*/
-    .cd-logo2{
+    .cd-logo2 {
         /*width: 50%;*/
         display: inline;
     }
-    .nodisplay-the-last{
-        display: none;
-    }
-
 }
 
 
 
 
 
-.test-remove-margin {
-    margin-left: 0;
-}
-
-.the-last-margin-fixes {
-    min-width: 200px;
-    margin-bottom: 25px;
-    margin-top: 15px;
-    margin-left: 10px;
-}
-
-.the-last-twitter-margin-fixes {
-    margin-right: -90px;
-}
 
 
-.the-last-title {
-    /*display: flex;*/
-    /*flex-direction: row;*/
-    /*justify-content: end;*/
-}
-
-.image-test {
-   /*max-width: 40%;*/
-   /* height: auto;*/
-/*max-height: 60%;*/
-/*    width: auto;*/
-}
-
-.test-flex {
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*flex-direction: row;*/
-}
-
-.feature-button-test {
-    /*max-width: 50%;*/
-}
-
-@media screen and (max-width: 767px) {
-    .last-thing {
-        display: none;
-    }
 
 
-}
-
-@media screen and (min-width: 767px) {
-    .image-test {
-        /*width: 30%;*/
-
-    }
-}
 
 
 
@@ -365,3 +275,83 @@ h1 + h2 {
 /*@media (min-width: 1400px) {*/
 
 /*}*/
+
+
+
+/* SELECTED WORK COLUMN */
+.featured-product-img {
+    border: solid 10px var(--gray);
+}
+
+.featured-project-text {
+    font-size: 1rem;
+    font-family: Abel, sans-serif;
+}
+
+.circle-small {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 0;
+}
+
+.circle-red-orange {
+    background-color: var(--red-orange);
+}
+
+.circle-red {
+    background-color: var(--orange);
+}
+
+.circle-green {
+    background-color: var(--green);
+}
+
+.circle-emerald {
+    background-color: var(--emerald);
+}
+
+/* THE LAST THING COLUMN */
+.the-last-thing-img {
+    border: solid 4px var(--gray);
+}
+
+.the-last-bullet-text {
+    width: 175px; /* keeps bullet text positioned like the examples */
+    margin-top: 7px;
+    margin-left: 10px;
+    font-family: Anton,sans-serif;
+    font-size: 1.1rem;
+}
+
+.the-last-thing-margin {
+    margin-bottom: 20px;
+}
+
+/* offset twitter icon */
+.twitter-fix {
+    position: relative;
+    top: 3px;
+
+    color: var(--blue);
+}
+
+@media screen and (max-width: 768px) {
+    .last-thing-no-display {
+        display: none;
+    }
+}
+
+/* GRID BORDERS */
+.dev-container {
+    /*border: solid 1px green;*/
+}
+
+.dev-row {
+    /*border: solid 3px red;*/
+    /*height: 3px; */
+}
+
+.dev-column {
+    /*border: dotted 3px blue;*/
+}

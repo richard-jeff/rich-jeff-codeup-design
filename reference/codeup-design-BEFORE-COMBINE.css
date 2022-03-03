@@ -3,9 +3,8 @@
 :root {
     --white: #FFFFFF;
     --black: #000000;
-
     --red-orange: #e6563b;
-    --orange: #EB9D3A;          /* typo: #cea03d; */
+    --orange: #cea03d;
     --green: #7cb06c;
     --emerald: #00aba9;
     --off-white: #f0f0f0;
@@ -14,7 +13,6 @@
     --blue: #1DA1F2;
 }
 
-/* ########## BEGIN GLOBAL STYLE UTILITIES########## */
 *,
 *::before,
 *::after {
@@ -82,7 +80,7 @@ a {
     font-family: 'Abel', sans-serif;
 }
 
-/* Make images easier to work with */
+Make images easier to work with
 img,
 picture {
     max-width: 100%;
@@ -96,6 +94,7 @@ textarea,
 select {
     font: inherit;
 }
+
 /* ########## END GLOBAL STYLE UTILITIES########## */
 
 .white-navbar {
@@ -108,7 +107,6 @@ select {
     /*top adjusts position of white navbar and its content*/
     top: 70px;
 }
-
 .navbar-items{
     /*this class allows pinpoint adjustments of the navbar content*/
     z-index: 33;
@@ -167,6 +165,8 @@ select {
 h1 {
     /*    controls the only h1 on the page "visual design..*/
     margin-top: 60px;
+
+
 }
 
 h1 + h2 {
@@ -197,59 +197,55 @@ h1 + h2 {
 .service-badges_badge h3{
     font-size:2.2rem ;
 }
-
-.design,
-.circle-red-orange {
+.design{
     background:var(--red-orange)
 }
-.develop,
-.circle-orange {
+.develop{
     background:var(--orange)
 }
-.support,
-.circle-green {
+.support{
     background:var(--green)
 }
-.host,
-.circle-emerald {
+.host{
     background:var(--emerald)
 }
 
-/* SELECTED WORK COLUMN */
-.featured-product-img {
-    border: solid 10px var(--gray);
+.the-last-width {
+    margin: 0 auto;
+    padding: 0;
+}
+.circle-red-orange {
+    background-color: var(--red-orange);
 }
 
-.featured-project-text {
-    font-size: 1rem;
-    font-family: Abel, sans-serif;
+.circle-red {
+    background-color: var(--orange);
 }
+
+.circle-green {
+    background-color: var(--green);
+}
+
+.circle-emerald {
+    background-color: var(--emerald);
+}
+
+/* MAIN BODY */
 
 .circle-small {
+    /*text-align:  center;*/
     height: 18px;
     width: 18px;
     border-radius: 50%;
     border: 0;
 }
 
-/* THE LAST THING COLUMN */
-.the-last-thing-img {
-    border: solid 4px var(--gray);
+/* returnreturn - FIX ME */
+.the-last-width {
+    max-width: 226px;
 }
 
-.the-last-bullet-text {
-    width: 175px; /* keeps bullet text positioned like the examples */
-    margin-top: 7px;
-    margin-left: 10px;
-    font-family: Anton,sans-serif;
-    font-size: 1.1rem;
-}
-
-.the-last-thing-margin {
-    margin-bottom: 20px;
-}
-
-/* offset twitter icon */
+/* offset twitter icon and apply blue */
 .twitter-fix {
     position: relative;
     top: 3px;
@@ -260,7 +256,19 @@ h1 + h2 {
 
 
 
+/* GRID BORDERS */
+.dev-container {
+    border: solid 1px green;
+}
 
+.dev-row {
+    border: solid 3px red;
+    height: 3px; /* returnreturn - FIX ME */
+}
+
+.dev-column {
+    border: dotted 3px blue;
+}
 
 
 
@@ -411,25 +419,5 @@ h1 + h2 {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .last-thing-no-display {
-        display: none;
-    }
-}
 
 
-
-
-
-/* GRID BORDERS */
-.dev-container {
-    /*border: solid 1px green;*/
-}
-
-.dev-row {
-    /*border: solid 3px red;*/
-}
-
-.dev-column {
-    /*border: dotted 3px blue;*/
-}
