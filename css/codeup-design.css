@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    background-color: var(--gray);
+    background-color: var(--off-white);
     min-height: 100vh;
     text-rendering: optimizeSpeed;
 }
@@ -220,6 +220,9 @@ h1 + h2 {
     border: solid 10px var(--gray);
 }
 
+.badge{
+    padding:0;
+}
 .featured-project-text {
     font-size: 1rem;
     font-family: Abel, sans-serif;
