@@ -298,6 +298,11 @@ transform: scale(1.2) rotate(5deg);
         opacity: 0;
     }
 }
+
+.column-titles {
+    font-family: Abel, sans-serif;
+}
+
 /* SELECTED WORK COLUMN */
 .featured-product-img {
     border: solid 10px var(--gray);
@@ -306,6 +311,7 @@ transform: scale(1.2) rotate(5deg);
 .badge{
     padding:0;
 }
+
 .featured-project-text {
     font-size: 1rem;
     font-family: Abel, sans-serif;
@@ -343,6 +349,16 @@ transform: scale(1.2) rotate(5deg);
     color: var(--blue);
 }
 
+/* title animations */
+.title-ani-1 {
+    animation-name: title-ani-1, title-ani-color;
+    animation-duration: 1s;
+}
+
+.title-ani-2 {
+    animation-name: title-ani-2, title-ani-color;
+    animation-duration: 1s;
+}
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 576px) {

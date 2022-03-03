@@ -1,0 +1,105 @@
+/* text spin 1 */
+@keyframes title-ani-1 {
+    0% {
+        transform: translateX(-200px) rotate(-20deg);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* text spin 2 */
+@keyframes title-ani-2 {
+    0% {
+        transform: translateX(350px) rotate(20deg);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* text color change */
+/* https://www.w3schools.com/colors/colors_shades.asp */
+@keyframes title-ani-color {
+    0% {
+        color: #909090
+    }
+
+    5% {
+        color: #888888
+    }
+
+    10% {
+        color: #808080
+    }
+
+    15% {
+        color: #787878
+    }
+
+    20% {
+        color: #707070
+    }
+
+    25% {
+        color: #696969
+    }
+
+    30% {
+        color: #686868
+    }
+
+    35% {
+        color: #606060
+    }
+
+    40% {
+        color: #585858
+    }
+
+    45% {
+        color: #505050
+    }
+
+    50% {
+        color: #484848
+    }
+
+    55% {
+        color: #404040
+    }
+
+    60% {
+        color: #383838
+    }
+
+    65% {
+        color: #303030
+    }
+
+    70% {
+        color: #282828
+    }
+
+    75% {
+        color: #202020
+    }
+
+    80% {
+        color: #181818
+    }
+
+    85% {
+        color: #101010
+    }
+
+    90% {
+        color: #080808
+    }
+
+    95% {
+        color: #000000;
+    }
+}
