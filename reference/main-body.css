@@ -82,8 +82,8 @@ a {
 /* Make images easier to work with */
 img,
 picture {
-    max-width: 100%;
-    display: block;
+    /*max-width: 100%;*/
+    /*display: block;*/
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -234,16 +234,16 @@ h1 + h2 {
 
 /* GRID BORDERS */
 .dev-container {
-    border: solid 1px green;
+    /*border: solid 1px green;*/
 }
 
 .dev-row {
-    border: solid 3px red;
+    /*border: solid 3px red;*/
     height: 3px; /* returnreturn - FIX ME */
 }
 
 .dev-column {
-    border: dotted 3px blue;
+    /*border: dotted 3px blue;*/
 }
 
 
@@ -313,17 +313,35 @@ h1 + h2 {
 }
 
 .image-test {
-   /*max-width: 200px;*/
-    /*height: auto;*/
+   /*max-width: 40%;*/
+   /* height: auto;*/
+/*max-height: 60%;*/
+/*    width: auto;*/
 }
 
 .test-flex {
     /*display: flex;*/
     /*flex-wrap: wrap;*/
+    /*flex-direction: row;*/
 }
 
 .feature-button-test {
     /*max-width: 50%;*/
+}
+
+@media screen and (max-width: 767px) {
+    .last-thing {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 767px) {
+    .image-test {
+        /*width: 30%;*/
+
+    }
 }
 
 
