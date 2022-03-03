@@ -20,8 +20,8 @@
     }
 }
 
-/* text color change */
-/* https://www.w3schools.com/colors/colors_shades.asp */
+/*text color change */
+/*https://www.w3schools.com/colors/colors_shades.asp */
 @keyframes title-ani-color {
     0% {
         color: #909090
@@ -108,7 +108,7 @@
 /*DARK MODE*/
 @media (prefers-color-scheme: dark) {
 
-    @keyframes nav-color-change {
+    @keyframes title-ani-color {
         0% {
             color: #888888
         }
