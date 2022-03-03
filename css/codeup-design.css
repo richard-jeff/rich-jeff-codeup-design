@@ -121,21 +121,10 @@ select {
     top: 50px;
 }
 
-/*.navbar-items-container {*/
-/*    !*this class allows pinpoint adjustments of the navbar content*!*/
-/*    z-index: 33;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    !*margin-top: 50px;*!*/
-/*    position: relative;*/
-/*    top: 20px;*/
-/*}*/
-
 .cd-logo {
     width: 105px;
     height: 105px;
-    transition: all 350ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 .cd-logo:hover{
     filter: grayscale(80%);
@@ -173,12 +162,10 @@ select {
     font-size: 1.2rem;
 }
 
-
 .nav-links a:hover{
     padding-bottom: 5px;
     border-bottom: 2px black solid;
 }
-
 
 h1 {
     /*    controls the only h1 on the page "visual design..*/
@@ -369,7 +356,6 @@ transform: scale(1.2) rotate(5deg);
         /*max-width: 90%;*/
         margin: 60px auto 80px auto;
         position: relative;
-
     }
     .service-badges_badge{
         width: 190px;
@@ -401,15 +387,11 @@ transform: scale(1.2) rotate(5deg);
         color: var(--black);
         font-size: 1.2rem;
         padding: 0 30px;
-
         transition: all 300ms ease-in-out 150ms ;
     }
     .left-links-ul-md li a:hover, .right-links-ul-md li a:hover{
         padding-bottom: 5px;
         border-bottom: 2px black solid;
-        /*transform-origin: left;*/
-        /*transform: translateX(0);*/
-
     }
 
     .logo2-md{
@@ -421,30 +403,23 @@ transform: scale(1.2) rotate(5deg);
     .logo2-md:hover{
         filter: grayscale(80%);
     }
-
     .codeup-design-logo-text {
         font-size: 2rem;
         text-align: center;
         display: block;
     }
-
     h1 {
         margin-top: 30px;
     }
     .service-container h2{
         margin-top: 40px;
     }
-
-
-
-    .service-badges {
+ .service-badges {
         width: 100%;
         /*max-width: 100%;*/
         margin: 60px auto 80px auto;
         position: relative;
-
     }
-
     .service-badges::after {
         content: "";
         position: absolute;
@@ -455,7 +430,6 @@ transform: scale(1.2) rotate(5deg);
         left: 50%;
         transform: translateX(-50%);
     }
-
     .service-badges_badge {
         /*    this adjusts the large services badges underneath the h1*/
         width: 170px;
@@ -468,15 +442,10 @@ transform: scale(1.2) rotate(5deg);
         border: solid 12px var(--white);
         margin-bottom: 15px;
     }
-
     .nodisplay-the-last {
         display: none;
     }
-
-
 }
-
-
 @media screen and (min-width: 992px) {
     .navbar-items2 {
         display: none;
@@ -488,8 +457,6 @@ transform: scale(1.2) rotate(5deg);
         justify-content: center;
         margin-top: 50px;
     }
-
-
     .codeup-design-logo-text {
         display: none;
     }
@@ -525,7 +492,6 @@ transform: scale(1.2) rotate(5deg);
         font-size: 1.1rem;
 
     }
-
     .right-links-ul-lg a:hover{
         padding-bottom: 5px;
         border-bottom: 2px black solid;
@@ -542,6 +508,7 @@ transform: scale(1.2) rotate(5deg);
         transform: translateX(-50%);
     }
 }
+
 /*DARK MODE*/
 @media (prefers-color-scheme: dark) {
     body{
@@ -567,15 +534,3 @@ transform: scale(1.2) rotate(5deg);
 
 }
 
-/* GRID BORDERS */
-.dev-container {
-    /*border: solid 1px green;*/
-}
-
-.dev-row {
-    /*border: solid 3px red;*/
-}
-
-.dev-column {
-    /*border: dotted 3px blue;*/
-}
