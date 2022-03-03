@@ -21,44 +21,85 @@
 }
 
 /* text color change */
+/* https://www.w3schools.com/colors/colors_shades.asp */
 @keyframes title-ani-color {
     0% {
-        color: var(--white);
+        color: #909090
+    }
+
+    5% {
+        color: #888888
     }
 
     10% {
-        color: var(--white);
+        color: #808080
+    }
+
+    15% {
+        color: #787878
     }
 
     20% {
-        color: var(--white);
+        color: #707070
+    }
+
+    25% {
+        color: #696969
     }
 
     30% {
-        color: var(--gray);
+        color: #686868
+    }
+
+    35% {
+        color: #606060
     }
 
     40% {
-        color: var(--gray);
+        color: #585858
+    }
+
+    45% {
+        color: #505050
     }
 
     50% {
-        color: var(--gray);
+        color: #484848
+    }
+
+    55% {
+        color: #404040
     }
 
     60% {
-        color: var(--gray);
+        color: #383838
+    }
+
+    65% {
+        color: #303030
     }
 
     70% {
-        color: var(--gray);
+        color: #282828
+    }
+
+    75% {
+        color: #202020
     }
 
     80% {
-        color: var(--black);
+        color: #181818
+    }
+
+    85% {
+        color: #101010
     }
 
     90% {
-        color: var(--black);
+        color: #080808
+    }
+
+    95% {
+        color: #000000;
     }
 }
