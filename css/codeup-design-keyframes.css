@@ -1,7 +1,7 @@
 /* text spin 1 */
 @keyframes title-ani-1 {
     0% {
-        transform: translateX(-100px) rotate(-20deg);
+        transform: translateX(-200px) rotate(-20deg);
     }
 
     100% {
@@ -12,7 +12,7 @@
 /* text spin 2 */
 @keyframes title-ani-2 {
     0% {
-        transform: translateX(100px) rotate(20deg);
+        transform: translateX(350px) rotate(20deg);
     }
 
     100% {
