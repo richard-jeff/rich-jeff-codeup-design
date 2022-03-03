@@ -103,3 +103,92 @@
         color: #000000;
     }
 }
+
+
+/*DARK MODE*/
+@media (prefers-color-scheme: dark) {
+
+    @keyframes nav-color-change {
+        0% {
+            color: #888888
+        }
+
+        5% {
+            color: #909090
+        }
+
+        10% {
+            color: #989898
+        }
+
+        15% {
+            color: #A0A0A0
+        }
+
+        20% {
+            color: #A8A8A8
+        }
+
+        25% {
+            color: #A9A9A9
+        }
+
+        30% {
+            color: #B0B0B0
+        }
+
+        35% {
+            color: #B8B8B8
+        }
+
+        40% {
+            color: #BEBEBE
+        }
+
+        45% {
+            color: #C0C0C0
+        }
+
+        50% {
+            color: #C8C8C8
+        }
+
+        55% {
+            color: #D0D0D0
+        }
+
+        60% {
+            color: #D3D3D3
+        }
+
+        65% {
+            color: #D8D8D8
+        }
+
+        70% {
+            color: #DCDCDC
+        }
+
+        75% {
+            color: #E0E0E0
+        }
+
+        80% {
+            color: #E8E8E8
+        }
+
+        85% {
+            color: #F0F0F0
+        }
+
+        90% {
+            color: #F5F5F5
+        }
+
+        95% {
+            color: #F8F8F8;
+        }
+    }
+
+
+}

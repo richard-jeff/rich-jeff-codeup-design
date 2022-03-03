@@ -334,6 +334,16 @@ transform: scale(1.2) rotate(5deg);
     color: var(--blue);
 }
 
+/* title animations */
+.title-ani-1 {
+    animation-name: title-ani-1, title-ani-color;
+    animation-duration: 1s;
+}
+
+.title-ani-2 {
+    animation-name: title-ani-2, title-ani-color;
+    animation-duration: 1s;
+}
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 576px) {
