@@ -134,6 +134,7 @@ select {
 .cd-logo {
     width: 105px;
     height: 105px;
+    transition: all 350ms ease-in-out;
 }
 .cd-logo:hover{
     filter: grayscale(80%);
@@ -397,8 +398,7 @@ transform: scale(1.2) rotate(5deg);
         width: 105px;
         height: 105px;
         display:inline-block;
-        /*position: relative;*/
-        /*flex-grow: 1;*/
+        transition: all 350ms ease-in-out;
     }
     .logo2-md:hover{
         filter: grayscale(80%);
@@ -495,8 +495,7 @@ transform: scale(1.2) rotate(5deg);
         width: 105px;
         height: 105px;
         display:inline-block;
-        /*position: relative;*/
-        /*flex-grow: 1;*/
+        transition: all 350ms ease-in-out;
     }
     .logo2-lg:hover{
         filter: grayscale(80%);
