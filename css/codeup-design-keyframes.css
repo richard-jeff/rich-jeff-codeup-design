@@ -22,7 +22,6 @@
 }
 
 /*text color change */
-/*https://www.w3schools.com/colors/colors_shades.asp */
 @keyframes title-ani-color {
     0% {
         color: #909090
@@ -106,7 +105,7 @@
 }
 
 
-/*DARK MODE*/
+/* text color change DARK MODE*/
 @media (prefers-color-scheme: dark) {
 
     @keyframes title-ani-color {
@@ -190,6 +189,45 @@
             color: #F8F8F8;
         }
     }
+}
 
+@keyframes slideleft {
+    from {
+        transform: translateX(-110%);
+        opacity: 0;
+    }
 
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.develop,
+.circle-orange {
+    background: var(--orange)
+}
+
+@keyframes slideorange {
+
+    100% {
+        transform: translatex(-120%);
+        opacity: 0;
+    }
+}
+
+@keyframes slidegreen {
+
+    100% {
+        transform: translatex(-160%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideemerald {
+
+    100% {
+        transform: translatex(-195%);
+        opacity: 0;
+    }
 }
