@@ -190,15 +190,16 @@ h1 + h2 {
 .service-badges {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin: 80px 0;
+    gap: 20px;
 }
 
 .service-badges_badge {
     /*    this adjusts the large services badges underneath the h1*/
-    width: 150px;
-    height: 150px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     color: var(--white);
     display: flex;
@@ -210,9 +211,7 @@ h1 + h2 {
 }
 
 .service-badges_badge:hover {
-    filter: contrast(130%);
-    /*    filter: grayscale(80%);*/
-    filter: hue-rotate(120deg);
+    filter: contrast(130%) hue-rotate(120deg);
     transform: scale(1.2) rotate(5deg);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 15px;
@@ -448,8 +447,10 @@ h1 + h2 {
     .service-badges {
         width: 100%;
         /*max-width: 100%;*/
-        margin: 60px auto 80px auto;
+        margin: 60px 0 80px 0;
         position: relative;
+        justify-content: center;
+        flex-wrap: nowrap;
     }
 
     .service-badges::after {
@@ -464,14 +465,13 @@ h1 + h2 {
     }
 
     .service-badges_badge {
-        /*    this adjusts the large services badges underneath the h1*/
-        width: 170px;
-        height: 170px;
+    width: 171px;
+        height: 171px;
         border-radius: 50%;
         color: var(--white);
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         border: solid 12px var(--white);
         margin-bottom: 15px;
     }
@@ -583,8 +583,13 @@ h1 + h2 {
 
 }
 
-@media screen and (max-width: 800px) {
-    .last-thing-no-display {
-        display: none;
-    }
+
+/*TODO: This media query seems to remove your column labled "LAST COLUMN" when i remove everything comes back, but */
+/*@media screen and (max-width: 800px) {*/
+/*    .last-thing-no-display {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+.last-thing-no-display{
+    padding: 0;
 }
