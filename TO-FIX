@@ -1,0 +1,9 @@
+h1
+    multiple instances of 'margin: 60px;'
+
+different results for R and J:
+    branched a copy that works for Richard - 'working-for-richard'
+
+    Changes to 'The Last' title and colum:
+        removed .css media query and added bootstrap breaks.
+        Need to see if this fixes Richard's page display.
