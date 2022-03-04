@@ -1,9 +1,19 @@
 h1
     multiple instances of 'margin: 60px;'
+* * *
 
 different results for R and J:
+
     branched a copy that works for Richard - 'working-for-richard'
 
     Changes to 'The Last' title and colum:
         removed .css media query and added bootstrap breaks.
         Need to see if this fixes Richard's page display.
+* * *
+
+/*TODO: I added this to remove the padding to give the sidebar some more space. But definitely add it back if you need it, i was just testing somethings out.*/
+.last-thing-no-display{
+    padding: 0;
+}
+
+    No changes with or without this for me.
