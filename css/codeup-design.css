@@ -304,7 +304,8 @@ select {
 }
 
 .the-last-bullet-text {
-    width: 175px; /* keeps bullet text positioned like the examples */
+    /*width: 175px;*/
+    /* keeps bullet text positioned like the examples */
     margin-top: 7px;
     margin-left: 10px;
     font-family: Anton, sans-serif;
