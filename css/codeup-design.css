@@ -564,7 +564,9 @@ h1 + h2 {
         /*this is the horizontal rule/border*/
         background: lightgray;
     }
-
+    p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, div::selection{
+        background: var(--red-orange);
+    }
     p, h1, h2, h3, h4, h5, h6, div, .right-links-ul-lg a, .nav-links a, .left-links-ul-md li a, .right-links-ul-md li a {
         color: var(--gray);
     }
@@ -592,7 +594,7 @@ h1 + h2 {
 /*    }*/
 /*}*/
 
-/*TODO: I added this to remove the padding to give the sidebar some more space*/
+/*TODO: I added this to remove the padding to give the sidebar some more space. But definitely add it back if you need it, i was just testing somethings out.*/
 .last-thing-no-display{
     padding: 0;
 }
