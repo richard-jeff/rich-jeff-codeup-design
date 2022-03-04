@@ -190,6 +190,40 @@
             color: #F8F8F8;
         }
     }
+}
 
+@keyframes slideleft {
+    from {
+        transform: translateX(-110%);
+        opacity: 0;
+    }
 
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideorange {
+
+    100% {
+        transform: translatex(-120%);
+        opacity: 0;
+    }
+}
+
+@keyframes slidegreen {
+
+    100% {
+        transform: translatex(-160%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideemerald {
+
+    100% {
+        transform: translatex(-195%);
+        opacity: 0;
+    }
 }
