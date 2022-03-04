@@ -584,12 +584,14 @@ h1 + h2 {
 }
 
 
-/*TODO: This media query seems to remove your column labled "LAST COLUMN" when i remove everything comes back, but */
+/*TODO: This media query seems to remove your column labled "LAST COLUMN". when i remove it, everything comes back */
 /*@media screen and (max-width: 800px) {*/
 /*    .last-thing-no-display {*/
 /*        display: none;*/
 /*    }*/
 /*}*/
+
+/*TODO: I added this to remove the padding to give the sidebar some more space*/
 .last-thing-no-display{
     padding: 0;
 }
